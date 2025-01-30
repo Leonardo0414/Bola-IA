@@ -1,0 +1,71 @@
+        /* CSS permanece o mesmo */
+        :root {
+            --quantum-primary: #00f3ff;
+            --neon-pink: #ff00ff;
+            --cyber-border: 1px solid rgba(0, 243, 255, 0.3);
+        }
+
+        body {
+            background: #000;
+            margin: 0;
+            font-family: 'Space Mono', monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        #quantum-container {
+            width: 100%;
+            height: 80vh;
+        }
+
+        .controles {
+            position: fixed;
+            bottom: 20px;
+            text-align: center;
+            width: 100%;
+            color: var(--quantum-primary);
+        }
+
+        .label {
+            font-size: 1.2em;
+            margin: 20px;
+            text-shadow: 0 0 10px var(--quantum-primary);
+        }
+
+        .botoes {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .cyber-button {
+            background: transparent;
+            border: var(--cyber-border);
+            padding: 10px 20px;
+            color: var(--quantum-primary);
+            cursor: pointer;
+            transition: all 0.3s;
+            border-radius: 5px;
+            min-width: 120px;
+        }
+
+        .cyber-button:hover {
+            background: rgba(0, 243, 255, 0.1);
+            transform: translateY(-2px);
+            box-shadow: 0 0 15px rgba(0, 243, 255, 0.3);
+        }
+
+        .cyber-button.active {
+            background: rgba(0, 243, 255, 0.2);
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.5);
+        }
+
+        .velocidade-info {
+            color: var(--quantum-primary);
+            font-size: 0.8em;
+            margin-top: 10px;
+            text-shadow: 0 0 5px var(--quantum-primary);
+        }

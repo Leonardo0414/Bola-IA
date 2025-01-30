@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuro IA</title>
+    <!-- Bibliotecas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <div id="quantum-container"></div>
+
+    <div class="controles">
+        <div class="label">IA GENERATE DeepSeek  CloudeAI</div>
+        <div class="botoes">
+            <button class="cyber-button" onclick="mudarCor()">Mudar Cor</button>
+            <button class="cyber-button" onclick="diminuirVelocidade()">Diminuir</button>
+            <button class="cyber-button" onclick="aumentarVelocidade()">Aumentar</button>
+            <button class="cyber-button" id="somButton" onclick="toggleSom()">Ligar Som</button>
+        </div>
+        <div class="velocidade-info">Velocidade: <span id="velocidadeValue">1</span>x</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
